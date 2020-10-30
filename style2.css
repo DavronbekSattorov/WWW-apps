@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(back.jpg);
+	/*background: #2ec194;*/
+}
+
+.container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin: 40px 0;
+	background:#ffff;
+	font-family: Century Gothic;
+	font-size: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+
+
+
+.container .box.sh2:before{
+	content: '';
+	position: absolute;
+	bottom:  10px;
+	left: 10%;
+	width: 90%;
+	height:50px;
+	background:rgb(0,0,0,0.3);
+	transform-origin: left;
+	transform: skewY(5deg);
+	z-index:-1;
+	filter: blur(5px);
+
+
+}
